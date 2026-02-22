@@ -329,11 +329,8 @@ h2 {
     }
     
     .carousel-item {
-        width: 150px;
-    }
-    
-    .carousel-item img {
-        height: 120px;
+        width: 400px;  /* половинный размер для мобильных */
+        height: 300px;
     }
     
     .lightbox-arrow {
@@ -350,4 +347,5 @@ h2 {
         right: 5px;
     }
 }
+
 
