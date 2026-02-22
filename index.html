@@ -1,13 +1,103 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ваше Имя — 3D Artist</title>
+    <title>Константин Горшков — 3D Generalist</title>
+    
+    <!-- Roboto font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Main CSS -->
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
-    <h1>Скоро здесь будет портфолио</h1>
+    <div class="container">
+        <!-- HEADER -->
+        <header class="header">
+            <h1>Константин Горшков</h1>
+            <div class="age-spec">42 года · 3D Generalist</div>
+        </header>
+
+        <!-- SKILLS -->
+        <section class="skills">
+            <div class="skills-group">
+                <h2>Программы</h2>
+                <div class="skills-list">
+                    <span class="skill-item">Blender</span>
+                    <span class="skill-item">Substance Designer</span>
+                    <span class="skill-item">Substance Painter</span>
+                    <span class="skill-item">Adobe Illustrator</span>
+                    <span class="skill-item">Figma</span>
+                    <span class="skill-item">Aseprite</span>
+                    <span class="skill-item">MagicaVoxel</span>
+                </div>
+            </div>
+            <div class="skills-group">
+                <h2>Игровые движки</h2>
+                <div class="skills-list">
+                    <span class="skill-item">Unity</span>
+                    <span class="skill-item">Unreal Engine</span>
+                    <span class="skill-item">Godot</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- GALLERY CAROUSEL -->
+        <section class="gallery-section">
+            <h2>Мои работы</h2>
+            <div class="carousel-container">
+                <button class="carousel-arrow carousel-arrow-left" id="carouselPrev">←</button>
+                <div class="carousel-track" id="carouselTrack"></div>
+                <button class="carousel-arrow carousel-arrow-right" id="carouselNext">→</button>
+            </div>
+        </section>
+
+        <!-- BIO -->
+        <section class="bio">
+            <p>Работаю в игровой индустрии более 15 лет. Начинал путь с flash-игр: сам программировал, рисовал графику и делал анимации. Затем сосредоточился на арте, освоил 3D-моделирование и создавал графику для мобильных игр. Много лет занимаюсь фрилансом: делаю 3D-модели для игр, анимации, VFX, шейдеры и материалы, интерфейсы, иконки, иллюстрации для полиграфии и веба.</p>
+        </section>
+
+        <!-- WORK EXPERIENCE -->
+        <section class="experience">
+            <h2>Опыт работы</h2>
+            <div class="experience-list">
+                <div class="exp-item"><span class="exp-years">2003–2004</span> проектант специалист 2 категории, ССМ "Инжиниринговый центр"</div>
+                <div class="exp-item"><span class="exp-years">2004–2005</span> оператор, компания Северсталь</div>
+                <div class="exp-item"><span class="exp-years">2005–2007</span> срочная служба в армии РФ</div>
+                <div class="exp-item"><span class="exp-years">2008–2010</span> дизайнер-иллюстратор, компания ООО "Алан Пойнт"</div>
+                <div class="exp-item"><span class="exp-years">2010–2026</span> 3D Generalist, фриланс</div>
+            </div>
+        </section>
+
+        <!-- CONTACTS -->
+        <section class="contacts">
+            <h2>Контакты</h2>
+            <div class="contacts-list">
+                <div class="contact-item"><span class="contact-label">Email:</span> <a href="mailto:massagames@gmail.com">massagames@gmail.com</a></div>
+                <div class="contact-item"><span class="contact-label">Telegram:</span> <a href="https://t.me/massagames" target="_blank">@massagames</a></div>
+                <div class="contact-item"><span class="contact-label">Behance:</span> <a href="https://www.behance.net/Kadabra" target="_blank">behance.net/Kadabra</a></div>
+                <div class="contact-item"><span class="contact-label">VK:</span> <a href="https://vk.com/lowpolydrifter" target="_blank">vk.com/lowpolydrifter</a></div>
+            </div>
+        </section>
+    </div>
+
+    <!-- LIGHTBOX -->
+    <div class="lightbox" id="lightbox">
+        <span class="lightbox-close" id="lightboxClose">×</span>
+        <button class="lightbox-arrow lightbox-arrow-left" id="lightboxPrev">←</button>
+        <div class="lightbox-content" id="lightboxContent">
+            <!-- media will be inserted here -->
+        </div>
+        <button class="lightbox-arrow lightbox-arrow-right" id="lightboxNext">→</button>
+        <div class="lightbox-caption" id="lightboxCaption"></div>
+    </div>
+
+    <!-- JSON DATA -->
+    <script src="data/gallery.json" type="application/json" id="galleryData"></script>
+    <!-- Main JS -->
     <script src="assets/js/main.js"></script>
 </body>
 </html>
