@@ -41,18 +41,17 @@ function renderCarousel() {
     });
 }
 
-// ===== УПРАВЛЕНИЕ КАРУСЕЛЬЮ =====
 function setupCarouselControls() {
     const track = document.getElementById('carouselTrack');
     const prevBtn = document.getElementById('carouselPrev');
     const nextBtn = document.getElementById('carouselNext');
     
     prevBtn.addEventListener('click', () => {
-        track.scrollBy({ left: -220, behavior: 'smooth' });
+        track.scrollBy({ left: -820, behavior: 'smooth' });
     });
     
     nextBtn.addEventListener('click', () => {
-        track.scrollBy({ left: 220, behavior: 'smooth' });
+        track.scrollBy({ left: 820, behavior: 'smooth' });
     });
 }
 
@@ -165,3 +164,4 @@ function setupLightboxControls() {
 
 // ===== ЗАПУСК =====
 document.addEventListener('DOMContentLoaded', loadGalleryData);
+
