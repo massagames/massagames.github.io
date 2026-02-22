@@ -1,0 +1,263 @@
+[
+  {
+    "order": 1,
+    "type": "image",
+    "title": "BT029.jpg",
+    "description": "дизайн уровня для мобильной стратегии Battle Time",
+    "thumbSrc": "assets/images/thumbs/preview_BT029.jpg",
+    "fullSrc": "assets/images/full/BT029.jpg",
+    "alt": "Дизайн уровня Battle Time"
+  },
+  {
+    "order": 2,
+    "type": "image",
+    "title": "clay_0.jpg",
+    "description": "База на Марсе в пластилиновом стиле",
+    "thumbSrc": "assets/images/thumbs/preview_clay_0.jpg",
+    "fullSrc": "assets/images/full/clay_0.jpg",
+    "alt": "База на Марсе в пластилиновом стиле"
+  },
+  {
+    "order": 3,
+    "type": "image",
+    "title": "police_portfolio.jpg",
+    "description": "Киберпанк полиция, лоуполи, пиксельарт текстуры",
+    "thumbSrc": "assets/images/thumbs/preview_police_portfolio.jpg",
+    "fullSrc": "assets/images/full/police_portfolio.jpg",
+    "alt": "Киберпанк полиция"
+  },
+  {
+    "order": 4,
+    "type": "image",
+    "title": "CNES_11.12.jpg",
+    "description": "Страница в журнале посвященная ИИ в транспорте",
+    "thumbSrc": "assets/images/thumbs/preview_CNES_11.12.jpg",
+    "fullSrc": "assets/images/full/CNES_11.12.jpg",
+    "alt": "ИИ в транспорте"
+  },
+  {
+    "order": 5,
+    "type": "video",
+    "title": "sewit.mp4",
+    "description": "Моделирование и PBR текстурирование моделей в Substance Painter",
+    "thumbSrc": "assets/images/thumbs/preview_sewit.jpg",
+    "fullSrc": "assets/videos/sewit.mp4",
+    "alt": "PBR текстурирование"
+  },
+  {
+    "order": 6,
+    "type": "image",
+    "title": "cosmoport_R1.jpg",
+    "description": "Дизайн игры Cosmoport, игра в жанре idle",
+    "thumbSrc": "assets/images/thumbs/preview_cosmoport_R1.jpg",
+    "fullSrc": "assets/images/full/cosmoport_R1.jpg",
+    "alt": "Cosmoport игра"
+  },
+  {
+    "order": 7,
+    "type": "image",
+    "title": "ship_page.jpg",
+    "description": "Иллюстрация-инфографика рассказывающая о добыче нефти на дне океана",
+    "thumbSrc": "assets/images/thumbs/preview_ship_page.jpg",
+    "fullSrc": "assets/images/full/ship_page.jpg",
+    "alt": "Добыча нефти инфографика"
+  },
+  {
+    "order": 8,
+    "type": "image",
+    "title": "bodler2x.jpg",
+    "description": "обложка коробки для настольной игры Комната Бодлера",
+    "thumbSrc": "assets/images/thumbs/preview_bodler2x.jpg",
+    "fullSrc": "assets/images/full/bodler2x.jpg",
+    "alt": "Комната Бодлера"
+  },
+  {
+    "order": 9,
+    "type": "image",
+    "title": "BT001X.jpg",
+    "description": "дизайн уровня для мобильной стратегии Battle Time",
+    "thumbSrc": "assets/images/thumbs/preview_BT001X.jpg",
+    "fullSrc": "assets/images/full/BT001X.jpg",
+    "alt": "Дизайн уровня Battle Time"
+  },
+  {
+    "order": 10,
+    "type": "image",
+    "title": "BT13.jpg",
+    "description": "дизайн уровня для мобильной стратегии Battle Time",
+    "thumbSrc": "assets/images/thumbs/preview_BT13.jpg",
+    "fullSrc": "assets/images/full/BT13.jpg",
+    "alt": "Дизайн уровня Battle Time"
+  },
+  {
+    "order": 11,
+    "type": "image",
+    "title": "BT3_10_C.jpg",
+    "description": "дизайн уровня для мобильной стратегии Battle Time",
+    "thumbSrc": "assets/images/thumbs/preview_BT3_10_C.jpg",
+    "fullSrc": "assets/images/full/BT3_10_C.jpg",
+    "alt": "Дизайн уровня Battle Time"
+  },
+  {
+    "order": 12,
+    "type": "image",
+    "title": "R1_1920x1080.jpg",
+    "description": "Цифровое противостояние",
+    "thumbSrc": "assets/images/thumbs/preview_R1_1920x1080.jpg",
+    "fullSrc": "assets/images/full/R1_1920x1080.jpg",
+    "alt": "Цифровое противостояние"
+  },
+  {
+    "order": 13,
+    "type": "image",
+    "title": "clay_1.jpg",
+    "description": "База на Марсе в пластилиновом стиле",
+    "thumbSrc": "assets/images/thumbs/preview_clay_1.jpg",
+    "fullSrc": "assets/images/full/clay_1.jpg",
+    "alt": "База на Марсе"
+  },
+  {
+    "order": 14,
+    "type": "image",
+    "title": "cubeworld.jpg",
+    "description": "Дизайн мобильной игры",
+    "thumbSrc": "assets/images/thumbs/preview_cubeworld.jpg",
+    "fullSrc": "assets/images/full/cubeworld.jpg",
+    "alt": "Дизайн мобильной игры"
+  },
+  {
+    "order": 15,
+    "type": "image",
+    "title": "final_pdf.jpg",
+    "description": "Страница в журнале посвященная переработке мусора",
+    "thumbSrc": "assets/images/thumbs/preview_final_pdf.jpg",
+    "fullSrc": "assets/images/full/final_pdf.jpg",
+    "alt": "Переработка мусора"
+  },
+  {
+    "order": 16,
+    "type": "image",
+    "title": "gori.jpg",
+    "description": "Футер для промо страницы страховой компании",
+    "thumbSrc": "assets/images/thumbs/preview_gori.jpg",
+    "fullSrc": "assets/images/full/gori.jpg",
+    "alt": "Футер страховой компании"
+  },
+  {
+    "order": 17,
+    "type": "image",
+    "title": "header_1400.jpg",
+    "description": "Заголовок для промо страницы страховой компании",
+    "thumbSrc": "assets/images/thumbs/preview_header_1400.jpg",
+    "fullSrc": "assets/images/full/header_1400.jpg",
+    "alt": "Заголовок страховой компании"
+  },
+  {
+    "order": 18,
+    "type": "image",
+    "title": "HELICOPTER_1.jpg",
+    "description": "Lowpoly вертолет с пиксельной текстурой",
+    "thumbSrc": "assets/images/thumbs/preview_HELICOPTER_1.jpg",
+    "fullSrc": "assets/images/full/HELICOPTER_1.jpg",
+    "alt": "Lowpoly вертолет"
+  },
+  {
+    "order": 19,
+    "type": "image",
+    "title": "HELICOPTER_1_wireframe.jpg",
+    "description": "Lowpoly вертолет с пиксельной текстурой",
+    "thumbSrc": "assets/images/thumbs/preview_HELICOPTER_1_wireframe.jpg",
+    "fullSrc": "assets/images/full/HELICOPTER_1_wireframe.jpg",
+    "alt": "Lowpoly вертолет вайрфрейм"
+  },
+  {
+    "order": 20,
+    "type": "image",
+    "title": "idle_robotics.jpg",
+    "description": "Дизайн мобильной игры в жанре idle про фабрику роботов",
+    "thumbSrc": "assets/images/thumbs/preview_idle_robotics.jpg",
+    "fullSrc": "assets/images/full/idle_robotics.jpg",
+    "alt": "Idle фабрика роботов"
+  },
+  {
+    "order": 21,
+    "type": "image",
+    "title": "archeolog_portfolio.jpg",
+    "description": "Мобильная игра в жанре idle об археологических раскопках",
+    "thumbSrc": "assets/images/thumbs/preview_archeolog_portfolio.jpg",
+    "fullSrc": "assets/images/full/archeolog_portfolio.jpg",
+    "alt": "Idle археология"
+  },
+  {
+    "order": 22,
+    "type": "image",
+    "title": "lamba.jpg",
+    "description": "Lamborghini Countach",
+    "thumbSrc": "assets/images/thumbs/preview_lamba.jpg",
+    "fullSrc": "assets/images/full/lamba.jpg",
+    "alt": "Lamborghini Countach"
+  },
+  {
+    "order": 23,
+    "type": "image",
+    "title": "lowpoly_strategy.jpg",
+    "description": "Дизайн стратегической игры",
+    "thumbSrc": "assets/images/thumbs/preview_lowpoly_strategy.jpg",
+    "fullSrc": "assets/images/full/lowpoly_strategy.jpg",
+    "alt": "Стратегия"
+  },
+  {
+    "order": 24,
+    "type": "image",
+    "title": "cat_rpg.jpg",
+    "description": "Концепт мобильной игры",
+    "thumbSrc": "assets/images/thumbs/preview_cat_rpg.jpg",
+    "fullSrc": "assets/images/full/cat_rpg.jpg",
+    "alt": "Концепт игры"
+  },
+  {
+    "order": 25,
+    "type": "image",
+    "title": "police_portfolio_lines_white.jpg",
+    "description": "Киберпанк полиция, лоуполи, пиксельарт текстуры",
+    "thumbSrc": "assets/images/thumbs/preview_police_portfolio_lines_white.jpg",
+    "fullSrc": "assets/images/full/police_portfolio_lines_white.jpg",
+    "alt": "Киберпанк полиция лайны"
+  },
+  {
+    "order": 26,
+    "type": "image",
+    "title": "river_builder.jpg",
+    "description": "Дизайн мобильной игры",
+    "thumbSrc": "assets/images/thumbs/preview_river_builder.jpg",
+    "fullSrc": "assets/images/full/river_builder.jpg",
+    "alt": "River builder"
+  },
+  {
+    "order": 27,
+    "type": "image",
+    "title": "render_island_2.jpg",
+    "description": "Локация для игры",
+    "thumbSrc": "assets/images/thumbs/preview_render_island_2.jpg",
+    "fullSrc": "assets/images/full/render_island_2.jpg",
+    "alt": "Локация остров"
+  },
+  {
+    "order": 28,
+    "type": "image",
+    "title": "render_island_2_wareframe.jpg",
+    "description": "Локация для игры, сетка и текстуры",
+    "thumbSrc": "assets/images/thumbs/preview_render_island_2_wareframe.jpg",
+    "fullSrc": "assets/images/full/render_island_2_wareframe.jpg",
+    "alt": "Локация остров вайрфрейм"
+  },
+  {
+    "order": 29,
+    "type": "image",
+    "title": "shuttle_portfolio.jpg",
+    "description": "Иллюстрация lowpoly шатл",
+    "thumbSrc": "assets/images/thumbs/preview_shuttle_portfolio.jpg",
+    "fullSrc": "assets/images/full/shuttle_portfolio.jpg",
+    "alt": "Lowpoly шатл"
+  }
+]
