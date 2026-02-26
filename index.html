@@ -5,100 +5,358 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Константин Горшков — 3D Generalist</title>
     
-    <!-- Roboto font -->
+    <!-- Roboto Condensed -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
     
-    <!-- Main CSS -->
-    <link rel="stylesheet" href="assets/css/main.css">
+    <style>
+        /* ===== RESET & BASE ===== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto Condensed', sans-serif;
+            background: #FFFFFF;
+            color: #1B1B1B;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 100px 20px 200px 20px;
+        }
+
+        /* ===== ТАБЛИЧНАЯ ВЕРСТКА ДЛЯ РАЗДЕЛОВ ===== */
+        .section-row {
+            display: flex;
+            margin-bottom: 40px;
+        }
+
+        .section-icon {
+            width: 220px;  /* ширина равна ширине фото для выравнивания */
+            flex-shrink: 0;
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        .section-icon img {
+            width: 28px;
+            height: 28px;
+            display: block;
+        }
+
+        .section-content {
+            flex: 1;
+        }
+
+        .section-title {
+            font-size: 14px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            margin-bottom: 15px;
+            color: #1B1B1B;
+        }
+
+        /* ===== ХЕДЕР ===== */
+        .header-row {
+            display: flex;
+            gap: 40px;
+            margin-bottom: 60px;
+        }
+
+        .header-photo {
+            width: 220px;
+            height: 220px;
+            flex-shrink: 0;
+        }
+
+        .header-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .header-info {
+            flex: 1;
+        }
+
+        .header-name {
+            font-size: 36px;
+            font-weight: 700;
+            line-height: 1.1;
+            margin-bottom: 8px;
+            color: #1B1B1B;
+        }
+
+        .header-specialization {
+            font-size: 14px;
+            color: #29A1DD;
+            margin-bottom: 25px;
+            font-weight: 400;
+        }
+
+        /* ===== КОНТАКТЫ В ДВЕ КОЛОНКИ ===== */
+        .contacts-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px 25px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .contact-item img {
+            width: 28px;
+            height: 28px;
+            flex-shrink: 0;
+        }
+
+        .contact-item a {
+            color: #1B1B1B;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.2s;
+            font-size: 14px;
+        }
+
+        .contact-item a:hover {
+            border-bottom-color: #1B1B1B;
+        }
+
+        /* ===== ТАБЛИЦА НАВЫКОВ ===== */
+        .skills-table {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .skill-row {
+            display: flex;
+            line-height: 1.4;
+        }
+
+        .skill-program {
+            width: 180px;
+            flex-shrink: 0;
+            font-weight: 400;
+        }
+
+        .skill-description {
+            flex: 1;
+        }
+
+        /* ===== ОПЫТ И ОБРАЗОВАНИЕ ===== */
+        .timeline-item {
+            display: flex;
+            margin-bottom: 8px;
+        }
+
+        .timeline-date {
+            width: 180px;
+            flex-shrink: 0;
+            color: #ABABAB;
+            font-weight: 400;
+        }
+
+        .timeline-text {
+            flex: 1;
+        }
+
+        /* ===== ОБО МНЕ ТЕКСТ ===== */
+        .about-text {
+            max-width: 600px;
+            line-height: 1.6;
+        }
+
+        /* ===== РАЗДЕЛИТЕЛИ МЕЖДУ БЛОКАМИ ===== */
+        .section-divider {
+            margin-bottom: 40px;
+        }
+
+        /* ===== АДАПТАЦИЯ ===== */
+        @media (max-width: 768px) {
+            .container {
+                padding: 60px 15px 100px 15px;
+            }
+
+            .header-row {
+                flex-direction: column;
+                gap: 30px;
+            }
+
+            .header-photo {
+                width: 180px;
+                height: 180px;
+            }
+
+            .section-row {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .section-icon {
+                width: auto;
+            }
+
+            .contacts-grid {
+                grid-template-columns: 1fr;
+                gap: 10px;
+            }
+
+            .skill-row {
+                flex-direction: column;
+                gap: 4px;
+            }
+
+            .skill-program {
+                width: auto;
+            }
+
+            .timeline-item {
+                flex-direction: column;
+                gap: 4px;
+            }
+
+            .timeline-date {
+                width: auto;
+            }
+
+            .header-name {
+                font-size: 28px;
+            }
+        }
+    </style>
 </head>
 <body>
     <div class="container">
-        <!-- HEADER -->
-        <header class="header">
-            <h1>Константин Горшков</h1>
-            <div class="age-spec">42 года · 3D Generalist</div>
-        </header>
-
-        <!-- SKILLS -->
-        <section class="skills">
-            <div class="skills-group">
-                <h2>Программы</h2>
-                <div class="skills-list">
-                    <span class="skill-item">Blender</span>
-                    <span class="skill-item">Substance Designer</span>
-                    <span class="skill-item">Substance Painter</span>
-                    <span class="skill-item">Adobe Illustrator</span>
-                    <span class="skill-item">Figma</span>
-                    <span class="skill-item">Aseprite</span>
-                    <span class="skill-item">MagicaVoxel</span>
+        <!-- ХЕДЕР -->
+        <div class="header-row">
+            <div class="header-photo">
+                <img src="assets/images/icons/foto.png" alt="Константин Горшков">
+            </div>
+            <div class="header-info">
+                <div class="header-name">Константин Горшков</div>
+                <div class="header-specialization">3D Generalist</div>
+                
+                <div class="contacts-grid">
+                    <div class="contact-item">
+                        <img src="assets/images/icons/icon_mail.png" alt="email">
+                        <a href="mailto:massagames@gmail.com">massagames@gmail.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <img src="assets/images/icons/icon_m.png" alt="telegram">
+                        <a href="https://t.me/massagames" target="_blank">@massagames</a>
+                    </div>
+                    <div class="contact-item">
+                        <img src="assets/images/icons/icon_as.png" alt="artstation">
+                        <a href="https://www.artstation.com/lowpolydrifter" target="_blank">Artstation</a>
+                    </div>
+                    <div class="contact-item">
+                        <img src="assets/images/icons/icon_bh.png" alt="behance">
+                        <a href="https://www.behance.net/Kadabra" target="_blank">Behance</a>
+                    </div>
                 </div>
             </div>
-            <div class="skills-group">
-                <h2>Игровые движки</h2>
-                <div class="skills-list">
-                    <span class="skill-item">Unity</span>
-                    <span class="skill-item">Unreal Engine</span>
-                    <span class="skill-item">Godot</span>
-                </div>
-            </div>
-        </section>
-
-        <!-- GALLERY CAROUSEL -->
-        <section class="gallery-section">
-            <h2>Мои работы</h2>
-            <div class="carousel-container">
-                <button class="carousel-arrow carousel-arrow-left" id="carouselPrev">←</button>
-                <div class="carousel-track" id="carouselTrack"></div>
-                <button class="carousel-arrow carousel-arrow-right" id="carouselNext">→</button>
-            </div>
-        </section>
-
-        <!-- BIO -->
-        <section class="bio">
-            <p>Работаю в игровой индустрии более 15 лет. Начинал путь с flash-игр: сам программировал, рисовал графику и делал анимации. Затем сосредоточился на арте, освоил 3D-моделирование и создавал графику для мобильных игр. Много лет занимаюсь фрилансом: делаю 3D-модели для игр, анимации, VFX, шейдеры и материалы, интерфейсы, иконки, иллюстрации для полиграфии и веба.</p>
-        </section>
-
-        <!-- WORK EXPERIENCE -->
-        <section class="experience">
-            <h2>Опыт работы</h2>
-            <div class="experience-list">
-                <div class="exp-item"><span class="exp-years">2003–2004</span> проектант специалист 2 категории, ССМ "Инжиниринговый центр"</div>
-                <div class="exp-item"><span class="exp-years">2004–2005</span> оператор, компания Северсталь</div>
-                <div class="exp-item"><span class="exp-years">2005–2007</span> срочная служба в армии РФ</div>
-                <div class="exp-item"><span class="exp-years">2008–2010</span> дизайнер-иллюстратор, компания ООО "Алан Пойнт"</div>
-                <div class="exp-item"><span class="exp-years">2010–2026</span> 3D Generalist, фриланс</div>
-            </div>
-        </section>
-
-        <!-- CONTACTS -->
-        <section class="contacts">
-            <h2>Контакты</h2>
-            <div class="contacts-list">
-                <div class="contact-item"><span class="contact-label">Email:</span> <a href="mailto:massagames@gmail.com">massagames@gmail.com</a></div>
-                <div class="contact-item"><span class="contact-label">Telegram:</span> <a href="https://t.me/massagames" target="_blank">@massagames</a></div>
-                <div class="contact-item"><span class="contact-label">Behance:</span> <a href="https://www.behance.net/Kadabra" target="_blank">behance.net/Kadabra</a></div>
-                <div class="contact-item"><span class="contact-label">VK:</span> <a href="https://vk.com/lowpolydrifter" target="_blank">vk.com/lowpolydrifter</a></div>
-            </div>
-        </section>
-    </div>
-
-    <!-- LIGHTBOX -->
-    <div class="lightbox" id="lightbox">
-        <span class="lightbox-close" id="lightboxClose">×</span>
-        <button class="lightbox-arrow lightbox-arrow-left" id="lightboxPrev">←</button>
-        <div class="lightbox-content" id="lightboxContent">
-            <!-- media will be inserted here -->
         </div>
-        <button class="lightbox-arrow lightbox-arrow-right" id="lightboxNext">→</button>
-        <div class="lightbox-caption" id="lightboxCaption"></div>
-    </div>
 
-    <!-- JSON DATA -->
-    <script src="/data/gallery.json" type="application/json" id="galleryData"></script>
-    <!-- Main JS -->
-    <script src="assets/js/main.js"></script>
+        <!-- РАЗДЕЛ ОБО МНЕ -->
+        <div class="section-row">
+            <div class="section-icon">
+                <img src="assets/images/icons/icon_about.png" alt="Обо мне">
+            </div>
+            <div class="section-content">
+                <div class="section-title">ОБО МНЕ</div>
+                <div class="about-text">
+                    Более 15 лет работаю с 2D и 3D графикой. Начинал свой путь с 2D иллюстраций и интерфейсов в web студии. Позже сам делал flash игры, программировал, рисовал графику, интерфейсы, делал 2D анимации. В период развития мобильных игр перешёл на 3D. Изучил Blender и освоил моделирование, rigging и анимации, текстурирование и материалы, визуальные эффекты, научился писать шейдеры, делал CG видео ролики. Освоил движки Unity, Unreal Engine, Godot. Образование программиста и опыт разработки игр помогают мне быстро находить язык со всеми участниками команды и с полуслова понимать поставленные задачи.
+                </div>
+            </div>
+        </div>
+
+        <!-- РАЗДЕЛ НАВЫКИ -->
+        <div class="section-row">
+            <div class="section-icon">
+                <img src="assets/images/icons/icon_skills.png" alt="Навыки">
+            </div>
+            <div class="section-content">
+                <div class="section-title">СОФТ И НАВЫКИ</div>
+                <div class="skills-table">
+                    <div class="skill-row">
+                        <div class="skill-program">Blender :</div>
+                        <div class="skill-description">моделирование, rigging и анимации персонажей и механизмов, развертка, текстурирование и материалы, запекание текстур, vfx и физические симуляции, geometry nodes, sculpting, редактирование видео</div>
+                    </div>
+                    <div class="skill-row">
+                        <div class="skill-program">Unity, UnrealEngine, Godot :</div>
+                        <div class="skill-description">импортирую модели и текстуры, настраиваю материалы, шейдеры, настраиваю сцены и освещение, работаю с ландшафтами, делаю дизайн уровней, делаю particle vfx</div>
+                    </div>
+                    <div class="skill-row">
+                        <div class="skill-program">Substance Painter/Designer :</div>
+                        <div class="skill-description">использую для текстурирования, запекания и генерации PBR текстур, а так же создания различных процедурных паттернов</div>
+                    </div>
+                    <div class="skill-row">
+                        <div class="skill-program">Figma, Lunacy :</div>
+                        <div class="skill-description">прототипирую интерфейсы, рисую иконки</div>
+                    </div>
+                    <div class="skill-row">
+                        <div class="skill-program">Illustrator, Photoshop, Aseprite :</div>
+                        <div class="skill-description">рисую текстуры, спрайты и пиксельарт</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- РАЗДЕЛ ОБРАЗОВАНИЕ -->
+        <div class="section-row">
+            <div class="section-icon">
+                <img src="assets/images/icons/icon_education.png" alt="Образование">
+            </div>
+            <div class="section-content">
+                <div class="section-title">ОБРАЗОВАНИЕ</div>
+                <div class="timeline-item">
+                    <div class="timeline-date">1999-2003</div>
+                    <div class="timeline-text">Череповецкий Металлургический Колледж — программист</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- РАЗДЕЛ ОПЫТ РАБОТЫ -->
+        <div class="section-row">
+            <div class="section-icon">
+                <img src="assets/images/icons/icon_work.png" alt="Опыт работы">
+            </div>
+            <div class="section-content">
+                <div class="section-title">ОПЫТ РАБОТЫ</div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2003–2004</div>
+                    <div class="timeline-text">проектант, ССМ Инжиниринговый центр</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2004–2005</div>
+                    <div class="timeline-text">оператор, ОАО Северсталь</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2005–2007</div>
+                    <div class="timeline-text">срочная служба в армии</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2008–2010</div>
+                    <div class="timeline-text">дизайнер-иллюстратор, компания ООО Алан Пойнт</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2010–2026</div>
+                    <div class="timeline-text">3D дизайнер, фриланс</div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
-
