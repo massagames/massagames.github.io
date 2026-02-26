@@ -22,42 +22,50 @@
             font-family: 'Roboto Condensed', sans-serif;
             background: #FFFFFF;
             color: #1B1B1B;
-            font-size: 16px; /* Увеличено с 14 до 16 */
+            font-size: 16px;
             line-height: 1.5;
         }
 
         .container {
-            max-width: 1000px; /* Ограничение по горизонтали */
+            max-width: 700px;
             width: 100%;
             margin: 0 auto;
             padding: 100px 20px 200px 20px;
+        }
+
+        /* ===== PIXEL PERFECT ДЛЯ ВСЕХ ИКОНОК ===== */
+        img[src*="icon_"],
+        img[src*="foto"] {
+            image-rendering: crisp-edges;        /* Для Fallback */
+            image-rendering: pixelated;           /* Для современных браузеров */
+            image-rendering: -moz-crisp-edges;    /* Для Firefox */
+            image-rendering: -webkit-optimize-contrast; /* Для Safari */
+            -ms-interpolation-mode: nearest-neighbor; /* Для старых IE */
         }
 
         /* ===== ТАБЛИЧНАЯ ВЕРСТКА ДЛЯ РАЗДЕЛОВ ===== */
         .section-row {
             display: flex;
             margin-bottom: 40px;
-            gap: 60px; /* Промежуток между иконкой и текстом */
+            gap: 28px;
         }
 
         .section-icon {
-            width: 28px; /* Фиксированная ширина под иконку */
+            width: 34px; /* Увеличено с 28 до 34 */
             flex-shrink: 0;
             display: flex;
             justify-content: flex-start;
         }
 
         .section-icon img {
-            width: 28px;
-            height: 28px;
+            width: 34px; /* Увеличено с 28 до 34 */
+            height: 34px; /* Увеличено с 28 до 34 */
             display: block;
-            image-rendering: crisp-edges; /* Для четкости пиксельных иконок */
-            image-rendering: pixelated;
         }
 
         .section-content {
             flex: 1;
-            max-width: calc(100% - 88px); /* 28px (иконка) + 60px (gap) */
+            max-width: calc(100% - 62px); /* 34px (иконка) + 28px (gap) */
         }
 
         .section-title {
@@ -71,7 +79,7 @@
         /* ===== ХЕДЕР ===== */
         .header-row {
             display: flex;
-            gap: 60px; /* Такой же отступ как между иконкой и текстом */
+            gap: 28px;
             margin-bottom: 60px;
         }
 
@@ -101,7 +109,7 @@
         }
 
         .header-specialization {
-            font-size: 36px; /* Увеличено до 36 как и имя */
+            font-size: 36px;
             color: #29A1DD;
             margin-bottom: 25px;
             font-weight: 400;
@@ -112,21 +120,19 @@
         .contacts-grid {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            gap: 15px 25px;
+            gap: 10px 15px;
         }
 
         .contact-item {
             display: flex;
             align-items: center;
-            gap: 10px;
+            gap: 8px;
         }
 
         .contact-item img {
-            width: 28px;
-            height: 28px;
+            width: 28px; /* Оставляем 28px */
+            height: 28px; /* Оставляем 28px */
             flex-shrink: 0;
-            image-rendering: crisp-edges; /* Для четкости */
-            image-rendering: pixelated;
         }
 
         .contact-item a {
@@ -135,6 +141,7 @@
             border-bottom: 1px solid transparent;
             transition: border-color 0.2s;
             font-size: 16px;
+            white-space: nowrap;
         }
 
         .contact-item a:hover {
@@ -145,19 +152,20 @@
         .skills-table {
             display: flex;
             flex-direction: column;
-            gap: 12px;
+            gap: 14px;
         }
 
         .skill-row {
             display: flex;
             line-height: 1.4;
+            gap: 14px;
         }
 
         .skill-program {
-            width: 200px; /* Немного шире для длинных названий */
+            width: 200px;
             flex-shrink: 0;
-            font-weight: 700; /* Жирный */
-            color: #1B1B1B;
+            font-weight: 400;
+            color: #29A1DD;
         }
 
         .skill-description {
@@ -171,7 +179,7 @@
         }
 
         .timeline-date {
-            width: 200px;
+            width: 180px;
             flex-shrink: 0;
             color: #ABABAB;
             font-weight: 400;
@@ -185,11 +193,6 @@
         .about-text {
             max-width: 100%;
             line-height: 1.6;
-        }
-
-        /* ===== РАЗДЕЛИТЕЛИ МЕЖДУ БЛОКАМИ ===== */
-        .section-divider {
-            margin-bottom: 40px;
         }
 
         /* ===== АДАПТАЦИЯ ===== */
@@ -219,7 +222,7 @@
             }
 
             .section-icon {
-                width: auto;
+                width: 34px;
             }
 
             .section-content {
@@ -228,7 +231,11 @@
 
             .contacts-grid {
                 grid-template-columns: 1fr;
-                gap: 10px;
+                gap: 8px;
+            }
+
+            .contact-item a {
+                white-space: normal;
             }
 
             .skill-row {
