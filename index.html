@@ -22,12 +22,13 @@
             font-family: 'Roboto Condensed', sans-serif;
             background: #FFFFFF;
             color: #1B1B1B;
-            font-size: 14px;
+            font-size: 16px; /* Увеличено с 14 до 16 */
             line-height: 1.5;
         }
 
         .container {
-            max-width: 1000px;
+            max-width: 1000px; /* Ограничение по горизонтали */
+            width: 100%;
             margin: 0 auto;
             padding: 100px 20px 200px 20px;
         }
@@ -36,10 +37,11 @@
         .section-row {
             display: flex;
             margin-bottom: 40px;
+            gap: 60px; /* Промежуток между иконкой и текстом */
         }
 
         .section-icon {
-            width: 220px;  /* ширина равна ширине фото для выравнивания */
+            width: 28px; /* Фиксированная ширина под иконку */
             flex-shrink: 0;
             display: flex;
             justify-content: flex-start;
@@ -49,14 +51,17 @@
             width: 28px;
             height: 28px;
             display: block;
+            image-rendering: crisp-edges; /* Для четкости пиксельных иконок */
+            image-rendering: pixelated;
         }
 
         .section-content {
             flex: 1;
+            max-width: calc(100% - 88px); /* 28px (иконка) + 60px (gap) */
         }
 
         .section-title {
-            font-size: 14px;
+            font-size: 16px;
             font-weight: 700;
             letter-spacing: 0.5px;
             margin-bottom: 15px;
@@ -66,7 +71,7 @@
         /* ===== ХЕДЕР ===== */
         .header-row {
             display: flex;
-            gap: 40px;
+            gap: 60px; /* Такой же отступ как между иконкой и текстом */
             margin-bottom: 60px;
         }
 
@@ -96,10 +101,11 @@
         }
 
         .header-specialization {
-            font-size: 14px;
+            font-size: 36px; /* Увеличено до 36 как и имя */
             color: #29A1DD;
             margin-bottom: 25px;
             font-weight: 400;
+            line-height: 1.1;
         }
 
         /* ===== КОНТАКТЫ В ДВЕ КОЛОНКИ ===== */
@@ -119,6 +125,8 @@
             width: 28px;
             height: 28px;
             flex-shrink: 0;
+            image-rendering: crisp-edges; /* Для четкости */
+            image-rendering: pixelated;
         }
 
         .contact-item a {
@@ -126,7 +134,7 @@
             text-decoration: none;
             border-bottom: 1px solid transparent;
             transition: border-color 0.2s;
-            font-size: 14px;
+            font-size: 16px;
         }
 
         .contact-item a:hover {
@@ -146,9 +154,10 @@
         }
 
         .skill-program {
-            width: 180px;
+            width: 200px; /* Немного шире для длинных названий */
             flex-shrink: 0;
-            font-weight: 400;
+            font-weight: 700; /* Жирный */
+            color: #1B1B1B;
         }
 
         .skill-description {
@@ -162,7 +171,7 @@
         }
 
         .timeline-date {
-            width: 180px;
+            width: 200px;
             flex-shrink: 0;
             color: #ABABAB;
             font-weight: 400;
@@ -174,7 +183,7 @@
 
         /* ===== ОБО МНЕ ТЕКСТ ===== */
         .about-text {
-            max-width: 600px;
+            max-width: 100%;
             line-height: 1.6;
         }
 
@@ -199,6 +208,11 @@
                 height: 180px;
             }
 
+            .header-name,
+            .header-specialization {
+                font-size: 28px;
+            }
+
             .section-row {
                 flex-direction: column;
                 gap: 15px;
@@ -206,6 +220,10 @@
 
             .section-icon {
                 width: auto;
+            }
+
+            .section-content {
+                max-width: 100%;
             }
 
             .contacts-grid {
@@ -229,10 +247,6 @@
 
             .timeline-date {
                 width: auto;
-            }
-
-            .header-name {
-                font-size: 28px;
             }
         }
     </style>
@@ -291,23 +305,23 @@
                 <div class="section-title">СОФТ И НАВЫКИ</div>
                 <div class="skills-table">
                     <div class="skill-row">
-                        <div class="skill-program">Blender :</div>
+                        <div class="skill-program">Blender</div>
                         <div class="skill-description">моделирование, rigging и анимации персонажей и механизмов, развертка, текстурирование и материалы, запекание текстур, vfx и физические симуляции, geometry nodes, sculpting, редактирование видео</div>
                     </div>
                     <div class="skill-row">
-                        <div class="skill-program">Unity, UnrealEngine, Godot :</div>
+                        <div class="skill-program">Unity, UnrealEngine, Godot</div>
                         <div class="skill-description">импортирую модели и текстуры, настраиваю материалы, шейдеры, настраиваю сцены и освещение, работаю с ландшафтами, делаю дизайн уровней, делаю particle vfx</div>
                     </div>
                     <div class="skill-row">
-                        <div class="skill-program">Substance Painter/Designer :</div>
+                        <div class="skill-program">Substance Painter/Designer</div>
                         <div class="skill-description">использую для текстурирования, запекания и генерации PBR текстур, а так же создания различных процедурных паттернов</div>
                     </div>
                     <div class="skill-row">
-                        <div class="skill-program">Figma, Lunacy :</div>
+                        <div class="skill-program">Figma, Lunacy</div>
                         <div class="skill-description">прототипирую интерфейсы, рисую иконки</div>
                     </div>
                     <div class="skill-row">
-                        <div class="skill-program">Illustrator, Photoshop, Aseprite :</div>
+                        <div class="skill-program">Illustrator, Photoshop, Aseprite</div>
                         <div class="skill-description">рисую текстуры, спрайты и пиксельарт</div>
                     </div>
                 </div>
